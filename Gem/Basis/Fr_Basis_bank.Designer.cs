@@ -70,13 +70,14 @@
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 2);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 4;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 29F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 112F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 36F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 138F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 62F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(507, 444);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(676, 546);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // dataGridView1
@@ -110,9 +111,9 @@
             this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.EnableHeadersVisualStyles = false;
-            this.dataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(170)))), ((int)(((byte)(170)))));
-            this.dataGridView1.Location = new System.Drawing.Point(3, 196);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.dataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(215)))), ((int)(((byte)(229)))));
+            this.dataGridView1.Location = new System.Drawing.Point(4, 242);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -123,7 +124,7 @@
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.WindowText;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            this.dataGridView1.Size = new System.Drawing.Size(501, 243);
+            this.dataGridView1.Size = new System.Drawing.Size(668, 299);
             this.dataGridView1.TabIndex = 65;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             this.dataGridView1.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView1_CellMouseClick);
@@ -187,14 +188,14 @@
             this.tableLayoutPanel3.Controls.Add(this.numberbank, 1, 1);
             this.tableLayoutPanel3.Controls.Add(this.cashfirst, 1, 2);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(3, 33);
-            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(4, 41);
+            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 3;
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(501, 104);
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 43F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 43F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 43F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(668, 128);
             this.tableLayoutPanel3.TabIndex = 3;
             // 
             // label1
@@ -203,9 +204,10 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(394, 79);
+            this.label1.Location = new System.Drawing.Point(526, 97);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(90, 16);
+            this.label1.Size = new System.Drawing.Size(117, 21);
             this.label1.TabIndex = 65;
             this.label1.Text = "موجودی اولیه :";
             // 
@@ -215,10 +217,10 @@
             this.name_bank.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.name_bank.Dock = System.Windows.Forms.DockStyle.Fill;
             this.name_bank.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.name_bank.Location = new System.Drawing.Point(3, 6);
-            this.name_bank.Margin = new System.Windows.Forms.Padding(3, 6, 3, 6);
+            this.name_bank.Location = new System.Drawing.Point(4, 7);
+            this.name_bank.Margin = new System.Windows.Forms.Padding(4, 7, 4, 7);
             this.name_bank.Name = "name_bank";
-            this.name_bank.Size = new System.Drawing.Size(385, 27);
+            this.name_bank.Size = new System.Drawing.Size(514, 32);
             this.name_bank.TabIndex = 61;
             // 
             // label9
@@ -227,9 +229,10 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.label9.ForeColor = System.Drawing.Color.Red;
-            this.label9.Location = new System.Drawing.Point(394, 9);
+            this.label9.Location = new System.Drawing.Point(526, 11);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(62, 16);
+            this.label9.Size = new System.Drawing.Size(77, 21);
             this.label9.TabIndex = 60;
             this.label9.Text = "نام بانک :";
             // 
@@ -239,9 +242,10 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.label2.ForeColor = System.Drawing.Color.Red;
-            this.label2.Location = new System.Drawing.Point(394, 44);
+            this.label2.Location = new System.Drawing.Point(526, 54);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(95, 16);
+            this.label2.Size = new System.Drawing.Size(120, 21);
             this.label2.TabIndex = 64;
             this.label2.Text = "شماره حساب :";
             // 
@@ -251,10 +255,10 @@
             this.numberbank.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.numberbank.Dock = System.Windows.Forms.DockStyle.Fill;
             this.numberbank.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numberbank.Location = new System.Drawing.Point(3, 41);
-            this.numberbank.Margin = new System.Windows.Forms.Padding(3, 6, 3, 6);
+            this.numberbank.Location = new System.Drawing.Point(4, 50);
+            this.numberbank.Margin = new System.Windows.Forms.Padding(4, 7, 4, 7);
             this.numberbank.Name = "numberbank";
-            this.numberbank.Size = new System.Drawing.Size(385, 27);
+            this.numberbank.Size = new System.Drawing.Size(514, 32);
             this.numberbank.TabIndex = 63;
             // 
             // cashfirst
@@ -263,10 +267,10 @@
             this.cashfirst.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.cashfirst.Dock = System.Windows.Forms.DockStyle.Fill;
             this.cashfirst.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cashfirst.Location = new System.Drawing.Point(3, 76);
-            this.cashfirst.Margin = new System.Windows.Forms.Padding(3, 6, 3, 6);
+            this.cashfirst.Location = new System.Drawing.Point(4, 93);
+            this.cashfirst.Margin = new System.Windows.Forms.Padding(4, 7, 4, 7);
             this.cashfirst.Name = "cashfirst";
-            this.cashfirst.Size = new System.Drawing.Size(385, 27);
+            this.cashfirst.Size = new System.Drawing.Size(514, 32);
             this.cashfirst.TabIndex = 66;
             this.cashfirst.TextChanged += new System.EventHandler(this.cashfirst_TextChanged);
             this.cashfirst.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cashfirst_KeyPress);
@@ -280,7 +284,7 @@
             this.ribbonClientPanel1.Location = new System.Drawing.Point(0, 0);
             this.ribbonClientPanel1.Margin = new System.Windows.Forms.Padding(0);
             this.ribbonClientPanel1.Name = "ribbonClientPanel1";
-            this.ribbonClientPanel1.Size = new System.Drawing.Size(507, 29);
+            this.ribbonClientPanel1.Size = new System.Drawing.Size(676, 36);
             // 
             // 
             // 
@@ -315,10 +319,10 @@
             this.tempid.BackColor = System.Drawing.Color.White;
             this.tempid.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tempid.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tempid.Location = new System.Drawing.Point(0, 12);
-            this.tempid.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.tempid.Location = new System.Drawing.Point(0, 15);
+            this.tempid.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.tempid.Name = "tempid";
-            this.tempid.Size = new System.Drawing.Size(121, 27);
+            this.tempid.Size = new System.Drawing.Size(161, 32);
             this.tempid.TabIndex = 62;
             this.tempid.Visible = false;
             // 
@@ -335,11 +339,12 @@
             this.tableLayoutPanel2.Controls.Add(this.Add, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.Del, 0, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 144);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(4, 178);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(501, 44);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(668, 54);
             this.tableLayoutPanel2.TabIndex = 5;
             // 
             // Edit
@@ -348,13 +353,14 @@
             this.Edit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
             this.Edit.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Edit.Enabled = false;
-            this.Edit.Font = new System.Drawing.Font("MRT_Poster", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.Edit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.Edit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.Edit.Image = global::Gem.Properties.Resources.UPDATE;
             this.Edit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Edit.Location = new System.Drawing.Point(129, 3);
+            this.Edit.Location = new System.Drawing.Point(171, 4);
+            this.Edit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Edit.Name = "Edit";
-            this.Edit.Size = new System.Drawing.Size(119, 38);
+            this.Edit.Size = new System.Drawing.Size(159, 46);
             this.Edit.TabIndex = 66;
             this.Edit.Text = "ویرایش";
             this.Edit.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -366,13 +372,14 @@
             this.Cancel.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.Cancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
             this.Cancel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Cancel.Font = new System.Drawing.Font("MRT_Poster", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.Cancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.Cancel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.Cancel.Image = global::Gem.Properties.Resources.CANCEL;
             this.Cancel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Cancel.Location = new System.Drawing.Point(3, 3);
+            this.Cancel.Location = new System.Drawing.Point(4, 4);
+            this.Cancel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Cancel.Name = "Cancel";
-            this.Cancel.Size = new System.Drawing.Size(120, 38);
+            this.Cancel.Size = new System.Drawing.Size(159, 46);
             this.Cancel.TabIndex = 65;
             this.Cancel.Text = "لغو";
             this.Cancel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -384,13 +391,14 @@
             this.Add.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.Add.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
             this.Add.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Add.Font = new System.Drawing.Font("MRT_Poster", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.Add.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.Add.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.Add.Image = global::Gem.Properties.Resources.ADD11;
             this.Add.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Add.Location = new System.Drawing.Point(379, 3);
+            this.Add.Location = new System.Drawing.Point(505, 4);
+            this.Add.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Add.Name = "Add";
-            this.Add.Size = new System.Drawing.Size(119, 38);
+            this.Add.Size = new System.Drawing.Size(159, 46);
             this.Add.TabIndex = 64;
             this.Add.Text = "ثبت";
             this.Add.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -403,13 +411,14 @@
             this.Del.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
             this.Del.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Del.Enabled = false;
-            this.Del.Font = new System.Drawing.Font("MRT_Poster_10", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.Del.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.Del.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.Del.Image = global::Gem.Properties.Resources.DELETE;
             this.Del.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Del.Location = new System.Drawing.Point(254, 3);
+            this.Del.Location = new System.Drawing.Point(338, 4);
+            this.Del.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Del.Name = "Del";
-            this.Del.Size = new System.Drawing.Size(119, 38);
+            this.Del.Size = new System.Drawing.Size(159, 46);
             this.Del.TabIndex = 1;
             this.Del.Text = "حذف";
             this.Del.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -418,11 +427,12 @@
             // 
             // Fr_Basis_bank
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(507, 444);
+            this.ClientSize = new System.Drawing.Size(676, 546);
             this.Controls.Add(this.tableLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Fr_Basis_bank";

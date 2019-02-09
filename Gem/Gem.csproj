@@ -76,25 +76,17 @@
     <Reference Include="DevComponents.DotNetBar2, Version=12.8.0.8, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL" />
     <Reference Include="DevComponents.TreeGX, Version=12.8.0.8, Culture=neutral, PublicKeyToken=055db68f670cfeab, processorArchitecture=MSIL" />
     <Reference Include="hm_farsicalendar">
-      <HintPath>..\..\..\..\..\Desktop\hm_farsicalendar.dll</HintPath>
+      <HintPath>.\hm_farsicalendar.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
     <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.VisualBasic" />
-    <Reference Include="SaelaLink">
-      <HintPath>..\..\..\..\..\Downloads\Telegram Desktop\SaelaLink Sample for C#\bin\Debug\SaelaLink.dll</HintPath>
-      <EmbedInteropTypes>True</EmbedInteropTypes>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="shamsidate">
-      <HintPath>..\..\..\..\..\Desktop\shamsidate.dll</HintPath>
-    </Reference>
-    <Reference Include="Stimulsoft.Base">
-      <HintPath>..\..\..\..\..\..\..\reoprtstimulsoft\Stimulsoft.Base.dll</HintPath>
+      <HintPath>.\shamsidate.dll</HintPath>
     </Reference>
     <Reference Include="Svg">
-      <HintPath>..\..\..\..\..\..\..\reoprtstimulsoft\Svg.dll</HintPath>
+      <HintPath>.\Svg.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
@@ -112,7 +104,7 @@
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="TestControl">
-      <HintPath>F:\Imaria\TestControl.dll</HintPath>
+      <HintPath>.\TestControl.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -261,6 +253,7 @@
     <Compile Include="Form_2\Fr_other.Designer.cs">
       <DependentUpon>Fr_other.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form_2\HM_FarsiCalendar.cs" />
     <Compile Include="Form_2\insurance.cs">
       <SubType>Form</SubType>
     </Compile>
