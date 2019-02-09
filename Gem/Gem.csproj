@@ -82,11 +82,6 @@
     <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
     <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.VisualBasic" />
-    <Reference Include="SaelaLink">
-      <HintPath>..\..\..\..\..\Downloads\Telegram Desktop\SaelaLink Sample for C#\bin\Debug\SaelaLink.dll</HintPath>
-      <EmbedInteropTypes>True</EmbedInteropTypes>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="shamsidate">
       <HintPath>..\..\..\..\..\Desktop\shamsidate.dll</HintPath>
     </Reference>
