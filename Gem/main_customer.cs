@@ -64,7 +64,7 @@ namespace Gem
 
         private void main_customer_Load(object sender, EventArgs e)
         {
-         try
+         //try
             {
                 if (mn == 0)
                 {
@@ -243,7 +243,7 @@ namespace Gem
                  timer1.Enabled = true;
             }
            
-       catch { }
+    //   catch { }
 
 
         }
