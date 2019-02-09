@@ -1,0 +1,817 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{39F2C9C6-D85E-4AA9-BEB4-8128AC1EFCEE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Gem</RootNamespace>
+    <AssemblyName>Gem</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>SecurityRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>SecurityRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar.Keyboard, Version=12.8.0.8, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL" />
+    <Reference Include="DevComponents.DotNetBar.Layout, Version=12.8.0.8, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL" />
+    <Reference Include="DevComponents.DotNetBar2, Version=12.8.0.8, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL" />
+    <Reference Include="DevComponents.TreeGX, Version=12.8.0.8, Culture=neutral, PublicKeyToken=055db68f670cfeab, processorArchitecture=MSIL" />
+    <Reference Include="hm_farsicalendar">
+      <HintPath>..\..\..\..\..\Desktop\hm_farsicalendar.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="SaelaLink">
+      <HintPath>..\..\..\..\..\Downloads\Telegram Desktop\SaelaLink Sample for C#\bin\Debug\SaelaLink.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="shamsidate">
+      <HintPath>..\..\..\..\..\Desktop\shamsidate.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Base">
+      <HintPath>..\..\..\..\..\..\..\reoprtstimulsoft\Stimulsoft.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Svg">
+      <HintPath>..\..\..\..\..\..\..\reoprtstimulsoft\Svg.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TestControl">
+      <HintPath>F:\Imaria\TestControl.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Basis\access.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Basis\access.Designer.cs">
+      <DependentUpon>access.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Basis\cash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Basis\cash.Designer.cs">
+      <DependentUpon>cash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Basis\Fr_Basis_bank.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Basis\Fr_Basis_bank.Designer.cs">
+      <DependentUpon>Fr_Basis_bank.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Basis\Fr_Basis_title_dayes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Basis\Fr_Basis_title_dayes.Designer.cs">
+      <DependentUpon>Fr_Basis_title_dayes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Basis\login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Basis\login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="buffet\goods.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="buffet\goods.Designer.cs">
+      <DependentUpon>goods.cs</DependentUpon>
+    </Compile>
+    <Compile Include="buffet\group_goods.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="buffet\group_goods.Designer.cs">
+      <DependentUpon>group_goods.cs</DependentUpon>
+    </Compile>
+    <Compile Include="buffet\sellers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="buffet\sellers.Designer.cs">
+      <DependentUpon>sellers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classmain.cs" />
+    <Compile Include="coch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="coch.Designer.cs">
+      <DependentUpon>coch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Basis\Fr_Basis_title.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Basis\Fr_Basis_title.Designer.cs">
+      <DependentUpon>Fr_Basis_title.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Basis\groupcloset.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Basis\groupcloset.Designer.cs">
+      <DependentUpon>groupcloset.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Basis\Fr_basis_Closet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Basis\Fr_basis_Closet.Designer.cs">
+      <DependentUpon>Fr_basis_Closet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_1\Fr_class.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_1\Fr_class.Designer.cs">
+      <DependentUpon>Fr_class.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_1\Fr_coche.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_1\Fr_coche.Designer.cs">
+      <DependentUpon>Fr_coche.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_1\Fr_customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_1\Fr_customer.Designer.cs">
+      <DependentUpon>Fr_customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_1\Fr_history_enter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_1\Fr_history_enter.Designer.cs">
+      <DependentUpon>Fr_history_enter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_1\Fr_package.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_1\Fr_package.Designer.cs">
+      <DependentUpon>Fr_package.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_1\Fr_pardakht.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_1\Fr_pardakht.Designer.cs">
+      <DependentUpon>Fr_pardakht.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_1\Fr_sevice_coche.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_1\Fr_sevice_coche.Designer.cs">
+      <DependentUpon>Fr_sevice_coche.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_1\Fr_week.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_1\Fr_week.Designer.cs">
+      <DependentUpon>Fr_week.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_1\select_customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_1\select_customer.Designer.cs">
+      <DependentUpon>select_customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_2\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_2\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_2\Fr_enter_other.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_2\Fr_enter_other.Designer.cs">
+      <DependentUpon>Fr_enter_other.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_2\Fr_other.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_2\Fr_other.Designer.cs">
+      <DependentUpon>Fr_other.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_2\insurance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_2\insurance.Designer.cs">
+      <DependentUpon>insurance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_2\record1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_2\record1.Designer.cs">
+      <DependentUpon>record1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_2\record2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_2\record2.Designer.cs">
+      <DependentUpon>record2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_2\regust_coch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_2\regust_coch.Designer.cs">
+      <DependentUpon>regust_coch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_2\session-class.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_2\session-class.Designer.cs">
+      <DependentUpon>session-class.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_2\session.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_2\session.Designer.cs">
+      <DependentUpon>session.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_2\SmsSeting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_2\SmsSeting.Designer.cs">
+      <DependentUpon>SmsSeting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_2\users.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_2\users.Designer.cs">
+      <DependentUpon>users.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Enter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Enter.Designer.cs">
+      <DependentUpon>Form_Enter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="main_customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main_customer.Designer.cs">
+      <DependentUpon>main_customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MDIParentmain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDIParentmain.Designer.cs">
+      <DependentUpon>MDIParentmain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OperationtblPart.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Report\carsh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\carsh.Designer.cs">
+      <DependentUpon>carsh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\ComboboxItem.cs" />
+    <Compile Include="Report\daily.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\daily.Designer.cs">
+      <DependentUpon>daily.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\DataSetdaily.cs">
+      <DependentUpon>DataSetdaily.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\DataSetdaily.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetdaily.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Report\previwe2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\previwe2.Designer.cs">
+      <DependentUpon>previwe2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\previwe3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\previwe3.Designer.cs">
+      <DependentUpon>previwe3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\prewiwe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\prewiwe.Designer.cs">
+      <DependentUpon>prewiwe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\selectbank.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\selectbank.Designer.cs">
+      <DependentUpon>selectbank.cs</DependentUpon>
+    </Compile>
+    <Compile Include="setting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="setting.Designer.cs">
+      <DependentUpon>setting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="shamsidate.cs" />
+    <Compile Include="test.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="test.Designer.cs">
+      <DependentUpon>test.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\ir.smsapp\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Basis\access.resx">
+      <DependentUpon>access.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Basis\cash.resx">
+      <DependentUpon>cash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Basis\Fr_Basis_bank.resx">
+      <DependentUpon>Fr_Basis_bank.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Basis\Fr_Basis_title.resx">
+      <DependentUpon>Fr_Basis_title.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Basis\Fr_Basis_title_dayes.resx">
+      <DependentUpon>Fr_Basis_title_dayes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Basis\login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="buffet\goods.resx">
+      <DependentUpon>goods.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="buffet\group_goods.resx">
+      <DependentUpon>group_goods.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="buffet\sellers.resx">
+      <DependentUpon>sellers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="coch.resx">
+      <DependentUpon>coch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Basis\groupcloset.resx">
+      <DependentUpon>groupcloset.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Basis\Fr_basis_Closet.resx">
+      <DependentUpon>Fr_basis_Closet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_1\Fr_class.resx">
+      <DependentUpon>Fr_class.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_1\Fr_coche.resx">
+      <DependentUpon>Fr_coche.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_1\Fr_customer.resx">
+      <DependentUpon>Fr_customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_1\Fr_history_enter.resx">
+      <DependentUpon>Fr_history_enter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_1\Fr_package.resx">
+      <DependentUpon>Fr_package.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_1\Fr_pardakht.resx">
+      <DependentUpon>Fr_pardakht.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_1\Fr_sevice_coche.resx">
+      <DependentUpon>Fr_sevice_coche.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_1\Fr_week.resx">
+      <DependentUpon>Fr_week.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_1\select_customer.resx">
+      <DependentUpon>select_customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_2\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_2\Fr_enter_other.resx">
+      <DependentUpon>Fr_enter_other.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_2\Fr_other.resx">
+      <DependentUpon>Fr_other.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_2\insurance.resx">
+      <DependentUpon>insurance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_2\record1.resx">
+      <DependentUpon>record1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_2\record2.resx">
+      <DependentUpon>record2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_2\regust_coch.resx">
+      <DependentUpon>regust_coch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_2\session-class.resx">
+      <DependentUpon>session-class.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_2\session.resx">
+      <DependentUpon>session.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_2\SmsSeting.resx">
+      <DependentUpon>SmsSeting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_2\users.resx">
+      <DependentUpon>users.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Enter.resx">
+      <DependentUpon>Form_Enter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="main_customer.resx">
+      <DependentUpon>main_customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDIParentmain.resx">
+      <DependentUpon>MDIParentmain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Report1.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\carsh.resx">
+      <DependentUpon>carsh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\daily.resx">
+      <DependentUpon>daily.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\previwe2.resx">
+      <DependentUpon>previwe2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\previwe3.resx">
+      <DependentUpon>previwe3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\prewiwe.resx">
+      <DependentUpon>prewiwe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\Report1.rdlc" />
+    <EmbeddedResource Include="Report\Report2.rdlc" />
+    <EmbeddedResource Include="Report\Report3.rdlc" />
+    <EmbeddedResource Include="Report\selectbank.resx">
+      <DependentUpon>selectbank.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="setting.resx">
+      <DependentUpon>setting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="test.resx">
+      <DependentUpon>test.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Web References\ir.smsapp\Messages.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ir.smsapp\News.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ir.smsapp\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\ir.smsapp\RequestInfo.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\ir.smsapp\v2.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Report\DataSetdaily.xsc">
+      <DependentUpon>DataSetdaily.xsd</DependentUpon>
+    </None>
+    <None Include="Report\DataSetdaily.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetdaily.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Report\DataSetdaily.xss">
+      <DependentUpon>DataSetdaily.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\users.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document_new.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document_text_add-128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document_text_add-1281.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\XMLFile_828_32x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CreateUserWizard_6020.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ViewMissing_8935.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Textfile_818_32x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TableMissing_8931.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ADD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ADD1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ADD11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DELETE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UPDATE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CANCEL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_person.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rfid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Folder%28special%29_5843_32x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\closet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\service_club.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\badybulding.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Physical_characteristics.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\food.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Exercise.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\class.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\class1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\extend.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Membershipfee.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\number.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\select.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Discount.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\personal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\listgym.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\class.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\listcoach.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\money-icon-87060.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\resive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\register.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\register1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\classs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\listtamdid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled-1 copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12344.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coch33.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bank.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pardakht1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\17.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://smsapp.ir/webservice/v2.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\ir.smsapp\</RelPath>
+      <UpdateFromURL>http://smsapp.ir/webservice/v2.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Gem_ir_smsapp_v2</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\ir.smsapp\v2.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Printer_print_3d_vector_symbol_simple_pictogram.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\print.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\insurance.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\insurance1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
