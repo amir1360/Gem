@@ -216,6 +216,10 @@
             this.buttonItem10,
             this.buttonItem26,
             this.buttonItem27,
+<<<<<<< HEAD
+=======
+            this.buttonItem12,
+>>>>>>> origin/master
             this.buttonItem28});
             this.ribbonBar6.LicenseKey = "F962CEC7-CD8F-4911-A9E9-CAB39962FC1F";
             this.ribbonBar6.Location = new System.Drawing.Point(3, 0);
@@ -1283,6 +1287,20 @@
             // 
             this.comboItem3.Text = "comboItem3";
             // 
+<<<<<<< HEAD
+=======
+            // buttonItem11
+            // 
+            this.buttonItem11.Name = "buttonItem11";
+            this.buttonItem11.Text = "buttonItem11";
+            // 
+            // buttonItem12
+            // 
+            this.buttonItem12.Name = "buttonItem12";
+            this.buttonItem12.SubItemsExpandWidth = 14;
+            this.buttonItem12.Text = "test1";
+            // 
+>>>>>>> origin/master
             // MDIParentmain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
