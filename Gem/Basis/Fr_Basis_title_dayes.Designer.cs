@@ -84,7 +84,7 @@
             this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.EnableHeadersVisualStyles = false;
-            this.dataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(170)))), ((int)(((byte)(170)))));
+            this.dataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(215)))), ((int)(((byte)(229)))));
             this.dataGridView1.Location = new System.Drawing.Point(3, 226);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dataGridView1.Name = "dataGridView1";
@@ -172,7 +172,7 @@
             this.tempid.Location = new System.Drawing.Point(0, 15);
             this.tempid.Margin = new System.Windows.Forms.Padding(3, 6, 3, 6);
             this.tempid.Name = "tempid";
-            this.tempid.Size = new System.Drawing.Size(141, 27);
+            this.tempid.Size = new System.Drawing.Size(141, 32);
             this.tempid.TabIndex = 62;
             this.tempid.Visible = false;
             // 
@@ -223,7 +223,7 @@
             this.Edit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
             this.Edit.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Edit.Enabled = false;
-            this.Edit.Font = new System.Drawing.Font("MRT_Poster", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.Edit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.Edit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.Edit.Image = global::Gem.Properties.Resources.UPDATE;
             this.Edit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -242,7 +242,7 @@
             this.Cancel.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.Cancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
             this.Cancel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Cancel.Font = new System.Drawing.Font("MRT_Poster", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.Cancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.Cancel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.Cancel.Image = global::Gem.Properties.Resources.CANCEL;
             this.Cancel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -261,7 +261,7 @@
             this.Add.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.Add.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
             this.Add.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Add.Font = new System.Drawing.Font("MRT_Poster", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.Add.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.Add.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.Add.Image = global::Gem.Properties.Resources.ADD11;
             this.Add.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -281,7 +281,7 @@
             this.Del.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
             this.Del.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Del.Enabled = false;
-            this.Del.Font = new System.Drawing.Font("MRT_Poster_10", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.Del.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.Del.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.Del.Image = global::Gem.Properties.Resources.DELETE;
             this.Del.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -323,7 +323,7 @@
             this.dayes.Location = new System.Drawing.Point(3, 52);
             this.dayes.Margin = new System.Windows.Forms.Padding(3, 6, 3, 6);
             this.dayes.Name = "dayes";
-            this.dayes.Size = new System.Drawing.Size(703, 27);
+            this.dayes.Size = new System.Drawing.Size(703, 32);
             this.dayes.TabIndex = 63;
             this.dayes.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.dayes_KeyPress);
             // 
@@ -333,9 +333,9 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(721, 15);
+            this.label1.Location = new System.Drawing.Point(714, 12);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(60, 16);
+            this.label1.Size = new System.Drawing.Size(74, 21);
             this.label1.TabIndex = 62;
             this.label1.Text = "عنوان : *";
             // 
@@ -348,7 +348,7 @@
             this.title.Location = new System.Drawing.Point(3, 6);
             this.title.Margin = new System.Windows.Forms.Padding(3, 6, 3, 6);
             this.title.Name = "title";
-            this.title.Size = new System.Drawing.Size(703, 27);
+            this.title.Size = new System.Drawing.Size(703, 32);
             this.title.TabIndex = 61;
             // 
             // label9
@@ -357,15 +357,15 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.label9.ForeColor = System.Drawing.Color.Red;
-            this.label9.Location = new System.Drawing.Point(729, 60);
+            this.label9.Location = new System.Drawing.Point(724, 57);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(44, 16);
+            this.label9.Size = new System.Drawing.Size(54, 21);
             this.label9.TabIndex = 60;
             this.label9.Text = "روز : *";
             // 
             // Fr_Basis_title_dayes
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(798, 468);
             this.Controls.Add(this.tableLayoutPanel1);

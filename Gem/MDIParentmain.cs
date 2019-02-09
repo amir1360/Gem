@@ -737,10 +737,23 @@ namespace Gem
             }
         }
 
+
         private void buttonItem28_Click(object sender, EventArgs e)
         {
-
         }
+
+
+        private void buttonItem25_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void buttonItem28_Click_1(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+       
 
         
     }
