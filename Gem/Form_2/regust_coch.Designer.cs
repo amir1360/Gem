@@ -596,11 +596,11 @@
         private DevComponents.DotNetBar.Ribbon.RibbonClientPanel ribbonClientPanel1;
         private System.Windows.Forms.TextBox tempid;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
-        private HM_FarsiCalendar.HM_FarsiCalendar date_start;
+      //  private HM_FarsiCalendar.HM_FarsiCalendar date_start;
         private System.Windows.Forms.ComboBox code_service;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox code_coch;
-        private HM_FarsiCalendar.HM_FarsiCalendar date_regust;
+      //  private HM_FarsiCalendar.HM_FarsiCalendar date_regust;
         private DevComponents.DotNetBar.Controls.DataGridViewX dataGridView1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;

@@ -14,7 +14,7 @@ namespace Gem.Report
     {
         OperationtblPart ClassTemp = new OperationtblPart();
         string searchstring = "";
-        string s1 = "";
+       // string s1 = "";
         string b1,b2,b3,b4,b5;
         public previwe3(string s11,string sum1,string sum2,string sum3,string sum4,string sum5)
         {

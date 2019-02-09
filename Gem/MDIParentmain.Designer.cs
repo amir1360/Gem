@@ -39,6 +39,7 @@
             this.buttonItem26 = new DevComponents.DotNetBar.ButtonItem();
             this.buttonItem27 = new DevComponents.DotNetBar.ButtonItem();
             this.buttonItem28 = new DevComponents.DotNetBar.ButtonItem();
+
             this.ribbonPanel1 = new DevComponents.DotNetBar.RibbonPanel();
             this.ribbonBar1 = new DevComponents.DotNetBar.RibbonBar();
             this.ke1 = new DevComponents.DotNetBar.ButtonItem();
@@ -51,6 +52,8 @@
             this.ke8 = new DevComponents.DotNetBar.ButtonItem();
             this.ke9 = new DevComponents.DotNetBar.ButtonItem();
             this.buttonItem13 = new DevComponents.DotNetBar.ButtonItem();
+
+
             this.ribbonPanel3 = new DevComponents.DotNetBar.RibbonPanel();
             this.ribbonBar5 = new DevComponents.DotNetBar.RibbonBar();
             this.buttonItem23 = new DevComponents.DotNetBar.ButtonItem();
@@ -97,6 +100,20 @@
             this.ke13 = new DevComponents.DotNetBar.ButtonItem();
             this.ke11 = new DevComponents.DotNetBar.ButtonItem();
             this.ke12 = new DevComponents.DotNetBar.ButtonItem();
+
+
+            this.ribbonPanel1 = new DevComponents.DotNetBar.RibbonPanel();
+            this.ribbonBar1 = new DevComponents.DotNetBar.RibbonBar();
+            this.ke1 = new DevComponents.DotNetBar.ButtonItem();
+            this.ke2 = new DevComponents.DotNetBar.ButtonItem();
+            this.ke3 = new DevComponents.DotNetBar.ButtonItem();
+            this.ke4 = new DevComponents.DotNetBar.ButtonItem();
+            this.ke5 = new DevComponents.DotNetBar.ButtonItem();
+            this.ke6 = new DevComponents.DotNetBar.ButtonItem();
+            this.ke7 = new DevComponents.DotNetBar.ButtonItem();
+            this.ke8 = new DevComponents.DotNetBar.ButtonItem();
+            this.ke9 = new DevComponents.DotNetBar.ButtonItem();
+            this.buttonItem13 = new DevComponents.DotNetBar.ButtonItem();
             this.ribbonTabItem1 = new DevComponents.DotNetBar.RibbonTabItem();
             this.ribbonTabItem2 = new DevComponents.DotNetBar.RibbonTabItem();
             this.ribbonTabItem5 = new DevComponents.DotNetBar.RibbonTabItem();
@@ -111,13 +128,20 @@
             this.comboItem1 = new DevComponents.Editors.ComboItem();
             this.comboItem2 = new DevComponents.Editors.ComboItem();
             this.comboItem3 = new DevComponents.Editors.ComboItem();
+            this.buttonItem11 = new DevComponents.DotNetBar.ButtonItem();
+            this.buttonItem12 = new DevComponents.DotNetBar.ButtonItem();
             this.ribbonControl1.SuspendLayout();
             this.ribbonPanel4.SuspendLayout();
+
             this.ribbonPanel1.SuspendLayout();
+
             this.ribbonPanel3.SuspendLayout();
             this.ribbonPanel6.SuspendLayout();
             this.ribbonPanel5.SuspendLayout();
             this.ribbonPanel2.SuspendLayout();
+
+            this.ribbonPanel1.SuspendLayout();
+
             this.SuspendLayout();
             // 
             // ribbonControl1
@@ -172,6 +196,130 @@
             this.ribbonControl1.Click += new System.EventHandler(this.ribbonControl1_Click);
             // 
             // ribbonPanel4
+
+            // 
+            this.ribbonPanel4.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.ribbonPanel4.Controls.Add(this.ribbonBar6);
+            this.ribbonPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ribbonPanel4.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ribbonPanel4.Location = new System.Drawing.Point(0, 60);
+            this.ribbonPanel4.Name = "ribbonPanel4";
+            this.ribbonPanel4.Padding = new System.Windows.Forms.Padding(3, 0, 3, 3);
+            this.ribbonPanel4.Size = new System.Drawing.Size(1066, 97);
+            // 
+            // 
+            // 
+            this.ribbonPanel4.Style.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            // 
+            // 
+            // 
+            this.ribbonPanel4.StyleMouseDown.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            // 
+            // 
+            // 
+            this.ribbonPanel4.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.ribbonPanel4.TabIndex = 4;
+            // 
+            // ribbonBar6
+            // 
+            this.ribbonBar6.AutoOverflowEnabled = true;
+            // 
+            // 
+            // 
+            this.ribbonBar6.BackgroundMouseOverStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            // 
+            // 
+            // 
+            this.ribbonBar6.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.ribbonBar6.ContainerControlProcessDialogKey = true;
+            this.ribbonBar6.Dock = System.Windows.Forms.DockStyle.Left;
+            this.ribbonBar6.DragDropSupport = true;
+            this.ribbonBar6.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
+            this.buttonItem25,
+            this.buttonItem8,
+            this.buttonItem10,
+            this.buttonItem26,
+            this.buttonItem27,
+            this.buttonItem28,
+            this.buttonItem12});
+            this.ribbonBar6.LicenseKey = "F962CEC7-CD8F-4911-A9E9-CAB39962FC1F";
+            this.ribbonBar6.Location = new System.Drawing.Point(3, 0);
+            this.ribbonBar6.Name = "ribbonBar6";
+            this.ribbonBar6.Size = new System.Drawing.Size(461, 94);
+            this.ribbonBar6.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.ribbonBar6.TabIndex = 3;
+            // 
+            // 
+            // 
+            this.ribbonBar6.TitleStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            // 
+            // 
+            // 
+            this.ribbonBar6.TitleStyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            // 
+            // buttonItem25
+            // 
+            this.buttonItem25.Image = global::Gem.Properties.Resources.users;
+            this.buttonItem25.ImageFixedSize = new System.Drawing.Size(50, 50);
+            this.buttonItem25.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
+            this.buttonItem25.Name = "buttonItem25";
+            this.buttonItem25.SubItems.AddRange(new DevComponents.DotNetBar.BaseItem[] {
+            this.buttonItem11});
+            this.buttonItem25.SubItemsExpandWidth = 14;
+            this.buttonItem25.Text = "پشتیبان گیری";
+            this.buttonItem25.Click += new System.EventHandler(this.buttonItem25_Click);
+            // 
+            // buttonItem8
+            // 
+            this.buttonItem8.Image = global::Gem.Properties.Resources.users;
+            this.buttonItem8.ImageFixedSize = new System.Drawing.Size(50, 50);
+            this.buttonItem8.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
+            this.buttonItem8.Name = "buttonItem8";
+            this.buttonItem8.SubItemsExpandWidth = 14;
+            this.buttonItem8.Text = "تنظیمات پورت ها";
+            this.buttonItem8.Click += new System.EventHandler(this.buttonItem8_Click);
+            // 
+            // buttonItem10
+            // 
+            this.buttonItem10.Image = global::Gem.Properties.Resources.users;
+            this.buttonItem10.ImageFixedSize = new System.Drawing.Size(50, 50);
+            this.buttonItem10.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
+            this.buttonItem10.Name = "buttonItem10";
+            this.buttonItem10.SubItemsExpandWidth = 14;
+            this.buttonItem10.Text = "تنظیمات SMS";
+            this.buttonItem10.Click += new System.EventHandler(this.buttonItem10_Click_1);
+            // 
+            // buttonItem26
+            // 
+            this.buttonItem26.Image = global::Gem.Properties.Resources.users;
+            this.buttonItem26.ImageFixedSize = new System.Drawing.Size(50, 50);
+            this.buttonItem26.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
+            this.buttonItem26.Name = "buttonItem26";
+            this.buttonItem26.SubItemsExpandWidth = 14;
+            this.buttonItem26.Text = "کاربران سیستم";
+            this.buttonItem26.Click += new System.EventHandler(this.buttonItem26_Click);
+            // 
+            // buttonItem27
+            // 
+            this.buttonItem27.Image = global::Gem.Properties.Resources.users;
+            this.buttonItem27.ImageFixedSize = new System.Drawing.Size(50, 50);
+            this.buttonItem27.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
+            this.buttonItem27.Name = "buttonItem27";
+            this.buttonItem27.SubItemsExpandWidth = 14;
+            this.buttonItem27.Text = "سال مالی";
+            // 
+            // buttonItem28
+            // 
+            this.buttonItem28.Image = global::Gem.Properties.Resources.users;
+            this.buttonItem28.ImageFixedSize = new System.Drawing.Size(50, 50);
+            this.buttonItem28.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
+            this.buttonItem28.Name = "buttonItem28";
+            this.buttonItem28.SubItemsExpandWidth = 14;
+            this.buttonItem28.Text = "خروج از سیستم";
+            this.buttonItem28.Click += new System.EventHandler(this.buttonItem28_Click);
+            // 
+            // ribbonPanel3
+
             // 
             this.ribbonPanel4.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.ribbonPanel4.Controls.Add(this.ribbonBar6);
@@ -1062,6 +1210,7 @@
             // 
             this.ribbonBar7.BackgroundMouseOverStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             // 
+
             // 
             // 
             this.ribbonBar7.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
@@ -1198,6 +1347,7 @@
             this.ke12.Visible = false;
             this.ke12.Click += new System.EventHandler(this.buttonItem9_Click);
             // 
+
             // ribbonTabItem1
             // 
             this.ribbonTabItem1.Name = "ribbonTabItem1";
@@ -1275,6 +1425,17 @@
             // 
             this.comboItem3.Text = "comboItem3";
             // 
+            // buttonItem11
+            // 
+            this.buttonItem11.Name = "buttonItem11";
+            this.buttonItem11.Text = "buttonItem11";
+            // 
+            // buttonItem12
+            // 
+            this.buttonItem12.Name = "buttonItem12";
+            this.buttonItem12.SubItemsExpandWidth = 14;
+            this.buttonItem12.Text = "test";
+            // 
             // MDIParentmain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
@@ -1296,11 +1457,16 @@
             this.ribbonControl1.ResumeLayout(false);
             this.ribbonControl1.PerformLayout();
             this.ribbonPanel4.ResumeLayout(false);
+
             this.ribbonPanel1.ResumeLayout(false);
+
             this.ribbonPanel3.ResumeLayout(false);
             this.ribbonPanel6.ResumeLayout(false);
             this.ribbonPanel5.ResumeLayout(false);
             this.ribbonPanel2.ResumeLayout(false);
+
+            this.ribbonPanel1.ResumeLayout(false);
+
             this.ResumeLayout(false);
 
         }
@@ -1388,6 +1554,8 @@
         private DevComponents.Editors.ComboItem comboItem1;
         private DevComponents.Editors.ComboItem comboItem2;
         private DevComponents.Editors.ComboItem comboItem3;
+        private DevComponents.DotNetBar.ButtonItem buttonItem11;
+        private DevComponents.DotNetBar.ButtonItem buttonItem12;
     }
 }
 
